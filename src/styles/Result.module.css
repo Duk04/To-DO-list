@@ -1,0 +1,66 @@
+.pad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.body {
+  display: flex;
+  width: 345px;
+  padding: 16px;
+  align-items: center;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  background: #f9fafb;
+  justify-content: space-between;
+}
+.check {
+  display: flex;
+  gap: 10px;
+}
+.delete {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #fef2f2;
+  align-self: stretch;
+  border: none;
+  color: #ef4444;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.noTask {
+  color: #6b7280;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.completed {
+  color: #6b7280;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.clearCompleted {
+  color: #ef4444;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background: transparent;
+}
+.buttonsBody {
+  display: flex;
+  gap: 10px;
+}

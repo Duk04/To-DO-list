@@ -1,0 +1,29 @@
+.body {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+}
+.input {
+  display: flex;
+  width: 280px;
+  height: 40px;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+.addButton {
+  display: flex;
+  height: 40px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #3c82f6;
+  color: white;
+  border: none;
+}
