@@ -1,12 +1,14 @@
 import React from "react";
 import taskuu from "@/styles/Result.module.css";
-
+import { useState } from "react";
 export const Tasks = ({ filteredTasks, tasks, setTasks }) => {
+  const [activeZuras, setActiveZuras] = useState(false);
+
   const togleTask = (taskID) => {
     const updateTask = tasks.map((task) =>
       taskID === task.id ? { ...task, isCompleted: !task.isCompleted } : task
     );
-
+    setActiveZuras(updateTask);
     setTasks(updateTask);
   };
   const deleteTask = (taskID) => {
@@ -31,7 +33,15 @@ export const Tasks = ({ filteredTasks, tasks, setTasks }) => {
                   checked={task.isCompleted}
                   onChange={() => togleTask(task.id)}
                 />
-                <p>{task.text}</p>
+                <p
+                  style={{
+                    textDecorationLine: task.isCompleted
+                      ? "line-through"
+                      : "none",
+                  }}
+                >
+                  {task.text}
+                </p>
               </div>
               <div>
                 <button
